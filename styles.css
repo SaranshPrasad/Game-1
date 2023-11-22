@@ -49,3 +49,40 @@ footer {
   font-family: 'Lobster', cursive;
   border: 1px solid ;
 }
+.btn-container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+ }
+
+@media (max-width:600px)
+{
+ body{
+  width: 100%;
+ 
+ }
+ .container{
+  width: 100%;
+ }
+ .title{
+  font-size: 2rem;
+ }
+ .btn{
+  font-size: 1rem;
+ }
+ .dice img{
+  height: 50px;
+  width: 50px;
+ }
+ .btn-container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+ }
+
+footer{
+  font-size: 1.5rem;
+}
+}
