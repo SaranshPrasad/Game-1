@@ -1,4 +1,10 @@
+var user1 = prompt("Enter Player 1 Name : ");
+var user2 = prompt("Enter Player 2 Name : ");
 
+
+document.getElementsByClassName("player1")[0].innerHTML = user1;
+document.getElementsByClassName("player2")[0].innerHTML = user2;
+// document.querySelector("p")[0].innerHTML = user1;
 
 var randomNumber1;
 var randomNumber2;
@@ -27,7 +33,7 @@ function check() {
     
     if(randomNumber1 > randomNumber2) 
     {
-        document.querySelector("h1").innerHTML = "Player 1 Wins 🍨" ;
+        document.querySelector("h1").innerHTML = user1+" Wins 🍨" ;
         
     }
     else if(randomNumber1  == randomNumber2)
@@ -36,7 +42,7 @@ function check() {
         
     }
     else if(randomNumber2 > randomNumber1 ){
-        document.querySelector("h1").innerHTML = "Player 2 Wins 🍦";
+        document.querySelector("h1").innerHTML = user2+" Wins 🍦";
         
     }
     else{
